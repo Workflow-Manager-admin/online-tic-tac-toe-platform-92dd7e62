@@ -1,0 +1,15 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, var(--cell-size));
+  grid-template-rows: repeat(3, var(--cell-size));
+  gap: 4px;
+  background-color: var(--border-color);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  :root {
+    --cell-size: 80px;
+  }
+}
